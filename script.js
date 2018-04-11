@@ -29,7 +29,6 @@ class Stopwatch extends React.Component {
   }
 
   start () {
-    console.log(this.state.running)  
     if (!this.state.running) {
       this.state.running = true
       this.watch = setInterval(() => this.step(), 10)
@@ -73,14 +72,11 @@ class Stopwatch extends React.Component {
   }
 
   get () {
-    console.log(this.format(this.times))
     timeTable = [...timeTable, this.format(this.times)]
-    console.log(timeTable)
   }
 
   clear () {
     timeTable = []
-    console.log(timeTable)
     document.getElementById('list').innerHTML = '';
   }
 
