@@ -1,0 +1,10 @@
+* {
+	list-style-type: none;
+	font-size: 50px;
+	background-color: #056E69;
+	color: #abd5d1
+}
+
+#app, #list {
+	text-align: center;
+}
